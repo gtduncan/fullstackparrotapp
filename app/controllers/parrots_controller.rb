@@ -1,0 +1,2 @@
+class ParrotsController < ApplicationController
+end
