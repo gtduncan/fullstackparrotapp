@@ -5,6 +5,7 @@ class CreateLessons < ActiveRecord::Migration[7.0]
       t.string :lesson_name
       t.string :lesson_description
       t.string :language
+      t.string :image_url
       t.integer :current_stage
 
       t.timestamps

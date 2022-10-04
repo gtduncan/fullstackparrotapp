@@ -8,19 +8,24 @@
 
 User.create(username: 'georgeduncan', first_name: 'George', last_name: 'Duncan', email: 'gtduncan@usc.edu', password_digest: '123', points: 0)
 
-Lesson.create(user_id: 1, lesson_name: 'Phrases', lesson_description: 'Learn how to communicate with some basic phrases.', language: 'es', current_stage: 1 )
-Lesson.create(user_id: 1, lesson_name: 'Travel', lesson_description: 'Get comfortable traveling.', language: 'es', current_stage: 1 )
+Lesson.create(user_id: 1, lesson_name: 'Phrases', lesson_description: 'Learn how to communicate with some basic phrases.', language: 'es', current_stage: 0 )
+Lesson.create(user_id: 1, lesson_name: 'Travel', lesson_description: 'Get comfortable traveling.', language: 'es', current_stage: 0 )
+Lesson.create(user_id: 1, lesson_name: 'Restaurant', lesson_description: 'Learn the skills you need for a night out at a restaurant.', language: 'es', current_stage: 0 )
+Lesson.create(user_id: 1, lesson_name: 'Family', lesson_description: 'Interact with friends and family members.', language: 'es', current_stage: 0 )
+Lesson.create(user_id: 1, lesson_name: 'Shopping', lesson_description: 'Getting ready to head to the supermarket.', language: 'es', current_stage: 0 )
+Lesson.create(user_id: 1, lesson_name: 'Present Tense I', lesson_description: 'Learn how to conjugate verbs in the present tense.', language: 'es', current_stage: 0 )
+
 
 Stage.create(lesson_id: 1, question: 'Hola', answer: 'Hello')
 Stage.create(lesson_id: 1, question: 'Adios', answer: 'Goodbye')
 Stage.create(lesson_id: 1, question: 'Por favor', answer: 'Please')
-Stage.create(lesson_id: 1, question: 'Gracias', answer: 'Gracias')
+Stage.create(lesson_id: 1, question: 'Gracias', answer: 'Thank you')
 Stage.create(lesson_id: 1, question: 'Lo siento', answer: 'Sorry')
 Stage.create(lesson_id: 1, question: 'Buenos dias', answer: 'Good morning')
 Stage.create(lesson_id: 1, question: 'Buenas tardes', answer: 'Good afternoon')
 Stage.create(lesson_id: 1, question: 'Buenos noches', answer: 'Good night')
 Stage.create(lesson_id: 1, question: '¿Cómo estás?', answer: 'How are you?')
-Stage.create(lesson_id: 1, question: '¿Cómo te llamas?', answer: 'Thank you')
+Stage.create(lesson_id: 1, question: '¿Cómo te llamas?', answer: 'What is your name?')
 
 Stage.create(lesson_id: 2, question: 'El avión', answer: 'Airplane')
 Stage.create(lesson_id: 2, question: 'El coche', answer: 'Car')

@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/users", to: "users#index"
   get "/users/:id", to: "users#show"
+  get "/lessons", to: "lessons#index"
+  get "/lessons/:id", to: "lessons#show"
+  patch "/lessons/:id", to: "lessons#update"
+  patch "/users/:id", to: 'users#update'
 end

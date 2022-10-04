@@ -12,7 +12,7 @@ Rails.application.configure do
   config.eager_load = false
 
   config.hosts << "georges-macbook-pro-2.local"
-  config.hosts << "62ce-71-190-177-64.ngrok.io"
+  config.hosts << "b0ea-71-190-177-64.ngrok.io"
 
 
   # Show full error reports.
