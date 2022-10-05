@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   get "/lessons/:id", to: "lessons#show"
   patch "/lessons/:id", to: "lessons#update"
   patch "/users/:id", to: 'users#update'
+  get '/parrots', to: 'parrots#index'
+  get '/parrots/:id', to: 'parrots#show'
+  post '/parrots', to: 'parrots#create'
 end

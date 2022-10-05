@@ -3,6 +3,7 @@ class CreateParrots < ActiveRecord::Migration[7.0]
     create_table :parrots do |t|
       t.integer :user_id
       t.string :name
+      t.string :img_src
       t.string :rarity
 
       t.timestamps

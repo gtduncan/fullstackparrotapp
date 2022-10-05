@@ -56,6 +56,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_26_150645) do
   create_table "parrots", force: :cascade do |t|
     t.integer "user_id"
     t.string "name"
+    t.string "img_src"
     t.string "rarity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
