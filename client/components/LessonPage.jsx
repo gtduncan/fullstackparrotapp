@@ -72,7 +72,7 @@ const LessonPage = ({user, setUser, navigation, setInLesson, inLesson}) => {
         if(userAnswer?.toLowerCase().trim() === currentStageData?.answer?.toLowerCase()) {
             console.log('correct block')
             setIsCorrect(true)
-            axios.patch(`https://cb21-2603-7000-483f-b6f4-11ba-8756-6eb2-11f5.ngrok.io/lessons/${inLesson}`, {
+            axios.patch(`https://73aa-2603-7000-483f-b6f4-5c29-f932-b644-70d1.ngrok.io/lessons/${inLesson}`, {
                 current_stage: currentStage+1
             }).then(res => {
                 console.log(res.data)
@@ -86,7 +86,7 @@ const LessonPage = ({user, setUser, navigation, setInLesson, inLesson}) => {
             else{
                 console.log('Points:' + user.points)
                 completeSound.play()
-                axios.patch(`https://cb21-2603-7000-483f-b6f4-11ba-8756-6eb2-11f5.ngrok.io/users/1`, {
+                axios.patch(`https://73aa-2603-7000-483f-b6f4-5c29-f932-b644-70d1.ngrok.io/users/1`, {
                     points: user.points + 10
                 }).then(res => {
                     console.log(res.data)
@@ -196,7 +196,7 @@ const LessonPage = ({user, setUser, navigation, setInLesson, inLesson}) => {
       );
 
     useEffect(()=>{
-        axios.get(`https://cb21-2603-7000-483f-b6f4-11ba-8756-6eb2-11f5.ngrok.io/lessons/${inLesson}`)
+        axios.get(`https://73aa-2603-7000-483f-b6f4-5c29-f932-b644-70d1.ngrok.io/lessons/${inLesson}`)
           .then(res => {
             console.log(res.data)
             const data = res.data

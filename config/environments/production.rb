@@ -33,7 +33,7 @@ Rails.application.configure do
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.asset_host = "http://assets.example.com"
   config.hosts << "georges-macbook-pro-2.local"
-  config.hosts << "cb21-2603-7000-483f-b6f4-11ba-8756-6eb2-11f5.ngrok.io"
+  config.hosts << "73aa-2603-7000-483f-b6f4-5c29-f932-b644-70d1.ngrok.io"
 
 
   # Specifies the header that your server uses for sending files.

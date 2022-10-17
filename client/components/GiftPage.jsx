@@ -101,14 +101,14 @@ const GiftPage = ({setUser, setInGift, inGift}) => {
     }
 
     const adoptParrot = () => {
-        axios.post(`https://cb21-2603-7000-483f-b6f4-11ba-8756-6eb2-11f5.ngrok.io/parrots/`, {
+        axios.post(`https://73aa-2603-7000-483f-b6f4-5c29-f932-b644-70d1.ngrok.io/parrots/`, {
             user_id: 1,
             name: parrotName.trim(),
             img_src: openedParrot.name,
             rarity: inGift
         }).then(res => {
             console.log(res.data)
-            axios.get('https://cb21-2603-7000-483f-b6f4-11ba-8756-6eb2-11f5.ngrok.io/users/1')
+            axios.get('https://73aa-2603-7000-483f-b6f4-5c29-f932-b644-70d1.ngrok.io/users/1')
                 .then(res2 => {
             console.log(res2.data)
             setUser(res2.data)

@@ -28,13 +28,13 @@ export default function App({}) {
   const [inGift, setInGift] = useState('')
 
   useEffect(()=>{
-    axios.get('https://cb21-2603-7000-483f-b6f4-11ba-8756-6eb2-11f5.ngrok.io/users/1')
+    axios.get('https://73aa-2603-7000-483f-b6f4-5c29-f932-b644-70d1.ngrok.io/users/1')
       .then(res => {
         console.log(res.data)
         setUser(res.data)
       })
       .catch(e => console.log(e.message))
-    axios.get('https://cb21-2603-7000-483f-b6f4-11ba-8756-6eb2-11f5.ngrok.io/users')
+    axios.get('https://73aa-2603-7000-483f-b6f4-5c29-f932-b644-70d1.ngrok.io/users')
     .then(res2 => {
       console.log(res2.data)
       setLoginInfo(res2.data)

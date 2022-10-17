@@ -54,7 +54,7 @@ const GiftCard = ({user, setUser, setInGift, rarity}) => {
         const setGift = () => {
             if(user.points >= 50) {
                 setInGift(rarity)
-                axios.patch(`https://cb21-2603-7000-483f-b6f4-11ba-8756-6eb2-11f5.ngrok.io/users/1`, {
+                axios.patch(`https://73aa-2603-7000-483f-b6f4-5c29-f932-b644-70d1.ngrok.io/users/1`, {
                     points: user.points - 50
                 }).then(res => {
                     console.log(res.data)
