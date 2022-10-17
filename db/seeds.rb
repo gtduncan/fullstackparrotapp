@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-User.create(username: 'georgeduncan', first_name: 'George', last_name: 'Duncan', email: 'gtduncan@usc.edu', password_digest: '123', points: 0)
+User.create(username: 'georgeduncan', first_name: 'George', last_name: 'Duncan', email: 'gtduncan@usc.edu', password_digest: '123', points: 90)
 
 Lesson.create(user_id: 1, lesson_name: 'Phrases', lesson_description: 'Learn how to communicate with some basic phrases.', language: 'es', current_stage: 0 )
 Lesson.create(user_id: 1, lesson_name: 'Travel', lesson_description: 'Get comfortable traveling.', language: 'es', current_stage: 0 )
@@ -48,3 +48,15 @@ Stage.create(lesson_id: 3, question: 'El vino', answer: 'Wine')
 Stage.create(lesson_id: 3, question: 'La carne', answer: 'Meat')
 Stage.create(lesson_id: 3, question: 'Las frutas', answer: 'Fruits')
 Stage.create(lesson_id: 3, question: 'Las verduras', answer: 'Vegetables')
+
+Stage.create(lesson_id: 4, question: 'Padre', answer: 'Father')
+Stage.create(lesson_id: 4, question: 'Madre', answer: 'Mother')
+Stage.create(lesson_id: 4, question: 'Hermano', answer: 'Brother')
+Stage.create(lesson_id: 4, question: 'Hermana', answer: 'Sister')
+Stage.create(lesson_id: 4, question: 'Marido', answer: 'Husband')
+Stage.create(lesson_id: 4, question: 'Mujer', answer: 'Wife')
+Stage.create(lesson_id: 4, question: 'Abuelo', answer: 'Grandfather')
+Stage.create(lesson_id: 4, question: 'Abuela', answer: 'Grandmother')
+Stage.create(lesson_id: 4, question: 'Hijo', answer: 'Son')
+Stage.create(lesson_id: 4, question: 'Hija', answer: 'Daughter')
+

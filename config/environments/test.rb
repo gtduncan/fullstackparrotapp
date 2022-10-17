@@ -55,7 +55,7 @@ Rails.application.configure do
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
   config.hosts << "georges-macbook-pro-2.local"
-  config.hosts << "5b7c-2603-7000-483f-b6f4-7134-1076-81cd-4c04.ngrok.io"
+  config.hosts << "cb21-2603-7000-483f-b6f4-11ba-8756-6eb2-11f5.ngrok.io"
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
